@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css" type="text/css">
+<title>Project Vortex</title>
+</head>
+
+<header class="head">
+<div class="headDiv">
+    <img src="GagiLogo.png" alt="company logo" width="90px" height="30px">
+</div>
+</header>
+
+<body>
+    <section>
+        <h1 class="project">Welcome to Vortex</h1>
+        <br>
+
+    <div class="main">
+
+    <p class="para">Here you can convert your text to video for your...</p>
+    <img src="Avatar1.jpeg" id="avatarType1" alt="image of avatar" width="200px" height="200px">
+    <ul>
+        <li>Marketing Campagne</li>
+        <li>Advertisement</li>
+        <li>New Product introduction</li>
+        <li>Presentations</li>
+        <li>And Many More..</li>
+    </ul>
+
+<div>
+    <label for="text">Enter Text:</label>
+    <textarea id="text" rows="4" cols="40"></textarea>
+
+    <label for="avatarType">Select Avatar Type:</label>
+    <select id="avatarType">
+    <option value="Avatar1.jpeg">Avatar 1</option>
+    <option value="Avatar2.jpeg">Avatar 2</option>
+    <option value="Avatar3.png">Avatar 3</option>
+    <option value="Avatar4.png">Avatar 4</option>
+    <option value="Avatar5.png">Avatar 5</option>
+    <option value="Avatar6.jpg">Avatar 6</option>
+    <option value="Avatar7.jpg">Avatar 7</option>
+        <!-- Add more options for different avatars -->
+    </select>
+
+    <button type="button" onclick="generateVideo()"> Generate Video</button>
+</div>
+</div>
+
+<div class="avatar-picker">
+    <h2>Choose Your Avatar</h2>
+    <div class="avatars">
+    <img src="Avatar6.jpg" id="avatarType6" alt="Avatar 6" onclick="selectAvatar('avatar6')">
+    <img src="Avatar2.jpeg" id="avatarType2" alt="Avatar 2" onclick="selectAvatar('avatar2')">
+    <img src="Avatar7.jpg" id="avatarType7" alt="Avatar 7" onclick="selectAvatar('avatar7')">
+    <!-- Add more avatars as needed -->
+    </div>
+    <div id="selected-avatar">
+    <p>You selected: <span id="selected-avatar-name">None</span></p>
+    </div>
+</div>
+</section>
+
+<script src="main.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
